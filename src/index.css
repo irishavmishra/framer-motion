@@ -3,5 +3,10 @@
 @tailwind utilities;
 
 :root {
-  background-color: black;
+  background: #020419;
+}
+
+.fadeout {
+  -webkit-mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 90%, transparent 100%);
 }
