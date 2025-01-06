@@ -1,6 +1,7 @@
 import Multistepanimation from "./components/Multistepanimation";
 import Usemotionvalue from "./components/Usemotionvalue";
 import UseSpring from "./components/Usespring";
+import Usetransform from "./components/Usetransform";
 
 const App = () => {
   return (
@@ -8,6 +9,7 @@ const App = () => {
       <Multistepanimation />
       <Usemotionvalue />
       <UseSpring />
+      <Usetransform />
     </div>
   );
 };
