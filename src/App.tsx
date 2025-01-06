@@ -1,3 +1,4 @@
+import Drag from "./components/Drag";
 import Multistepanimation from "./components/Multistepanimation";
 import Usemotionvalue from "./components/Usemotionvalue";
 import UseSpring from "./components/Usespring";
@@ -10,6 +11,7 @@ const App = () => {
       <Usemotionvalue />
       <UseSpring />
       <Usetransform />
+      <Drag />
     </div>
   );
 };
