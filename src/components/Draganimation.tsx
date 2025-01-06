@@ -12,7 +12,7 @@ const Draganimation = () => {
 
   return (
     <div className="flex flex-col items-center w-full min-h-screen p-10 gap-40 text-[#DAF7A6]">
-      <h2 className="text-[#DAF7A6] text-xl">change Animation on drag</h2>
+      <h2 className="text-[#DAF7A6] text-xl">Change Animation on drag</h2>
 
       <motion.div
         className="rounded-md w-32 h-32 px-3 py-2 bg-[#cc1200]"
