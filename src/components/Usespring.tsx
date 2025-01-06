@@ -1,12 +1,12 @@
-import { motion, useMotionValue } from "framer-motion";
+import { motion, useSpring } from "framer-motion";
 
-const Usemotionvalue = () => {
-  const scale = useMotionValue(2);
-
-  //   if we use useMotionValue(2) it will set the initial value to 2 and its also give us the ability to change the value of the scale by using scale.set(5) and we can also get the value of the scale by using scale.get().
-  //   console.log(scale.get());
-  //   console.log(scale.set(5));
-  //   console.log(scale.get());
+const UseSpring = () => {
+  const scale = useSpring(2, {
+    stiffness: 200,
+    damping: 20,
+    mass: 10,
+    velocity: 0,
+  });
 
   const handleRangeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     scale.set(parseFloat(e.target.value));
@@ -14,8 +14,7 @@ const Usemotionvalue = () => {
 
   return (
     <div className="flex flex-col items-center w-full min-h-screen p-10 gap-40 text-[#DAF7A6]">
-      <h2 className="text-[#DAF7A6] text-xl">Use Motion</h2>
-
+      <h2 className="text-[#DAF7A6] text-xl">Use Spring</h2>
       <motion.button
         className="rounded-full w-32 h-12 bg-[#cc1200]"
         style={{ scale }}
@@ -37,4 +36,4 @@ const Usemotionvalue = () => {
   );
 };
 
-export default Usemotionvalue;
+export default UseSpring;
